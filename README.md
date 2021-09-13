@@ -126,13 +126,13 @@ Installation
   **Tested VM environment** (Whether a certain FEMU mode works under a certain
   guest kernel version): 
 
-  | Mode \ Guest Kernel       | 4.16    | 4.20    | 5.4     | 5.10    |
-  | :---                      | :---:   | --      | --      | --      |
-  | NoSSD                     | &check; | &check; | &check; | &check; |
-  | Black-box SSD             | &check; | &check; | &check; | &check; |
-  | OpenChannel-SSD v1.2      | &check; | &check; | &check; | &check; |
-  | OpenChannel-SSD v2.0      | &cross; | &check; | &check; | &check; |
-  | Zoned-Namespace (ZNS) SSD | &cross; | &cross; | &cross; | &check; |
+  | Mode \ Guest Kernel       | 4.16    | 4.20    | 5.4     | 5.10    | 5.15    |
+  | :---                      | :---:   | --      | --      | --      | --      |
+  | NoSSD                     | &check; | &check; | &check; | &check; | &check; |
+  | Black-box SSD             | &check; | &check; | &check; | &check; | &check; |
+  | OpenChannel-SSD v1.2      | &check; | &check; | &check; | &check; | &cross; |
+  | OpenChannel-SSD v2.0      | &cross; | &check; | &check; | &check; | &cross; |
+  | Zoned-Namespace (ZNS) SSD | &cross; | &cross; | &cross; | &check; | &check; |
 
 
 > Notes: FEMU is now re-based on QEMU-5.2.0, which requires >=Python-3.6 and >=Ninjia-1.7 to build, 
